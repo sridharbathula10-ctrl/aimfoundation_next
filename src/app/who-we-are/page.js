@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
 import ScrollReveal from "../../components/ScrollReveal";
 import teamData from "../../data/team.json";
@@ -16,10 +17,10 @@ const principles = [
 ];
 
 const sdgs = [
-  ["SDG 3", "Good Health and Well-being", "Janani Mitra addresses maternal nutrition and antenatal care. The Gut Microbiome Study contributes to non-communicable disease research."],
-  ["SDG 2", "Zero Hunger", "Janani Mitra targets undernutrition in pregnant women through validated dietary diversity monitoring."],
-  ["SDG 5", "Gender Equality", "Programmes deliver maternal health services through women community health workers to women in rural populations."],
-  ["SDG 17", "Partnerships for the Goals", "Delivered in partnership with State Governments, AIG Hospitals, and academic partners in India and abroad."],
+  ["SDG 3", "Good Health and Well-being", "Janani Mitra addresses maternal nutrition and antenatal care. The Gut Microbiome Study contributes to non-communicable disease research.", "#4C9F38"],
+  ["SDG 2", "Zero Hunger", "Janani Mitra targets undernutrition in pregnant women through validated dietary diversity monitoring.", "#DDA63A"],
+  ["SDG 5", "Gender Equality", "Programmes deliver maternal health services through women community health workers to women in rural populations.", "#FF3A21"],
+  ["SDG 17", "Partnerships for the Goals", "Delivered in partnership with State Governments, AIG Hospitals, and academic partners in India and abroad.", "#19486A"],
 ];
 
 const partnerGroups = [
@@ -29,26 +30,32 @@ const partnerGroups = [
   ["International Programme Partners", [["Stanford Mussallem Center for Biodesign", "Biodesign method and international linkage."], ["Biodesign Australia", "International linkage and mentorship."], ["Biodesign Israel", "International linkage and mentorship."]]],
 ];
 
+const partnerLogos = {
+  "Government of Andhra Pradesh": "/images/ap-government.webp",
+  "Government of Telangana": "/images/telangana-government.webp",
+  "Indian School of Business": "/images/isb.webp",
+  "Indian Institute of Technology, Delhi": "/images/iit-delhi.webp",
+  "IIIT Hyderabad": "/images/iiit-hyderabad.webp",
+};
+
 function SectionLabel({ children }) { return <SectionEyebrow>{children}</SectionEyebrow>; }
 
 export default function WhoWeArePage() {
-  return <main className="who-we-are-page bg-[#fbfafc] text-[#3f3049]">
+  return <main className=" bg-[#fbfafc] text-[#3f3049]">
     <section className="relative isolate min-h-[590px] overflow-hidden bg-[#fffafd] px-6 pb-20 pt-40 text-[#402f5a] md:min-h-[650px] md:px-12 md:pb-[105px] md:pt-[220px]">
       <div aria-hidden="true" className="absolute inset-0 -z-20 opacity-35 [background-image:linear-gradient(#dfc9f217_1px,transparent_1px),linear-gradient(90deg,#dfc9f217_1px,transparent_1px)] [background-size:64px_64px] [mask-image:linear-gradient(to_bottom,black,transparent)]" />
-      <div aria-hidden="true" className="absolute -right-[42vw] top-[26%] -z-10 aspect-square w-[96vw] rounded-full border border-[#dfc9f255] shadow-[0_0_0_90px_#dfc9f20a,0_0_0_180px_#dfc9f207] motion-safe:animate-[pulse_7s_ease-in-out_infinite] md:-right-[13vw] md:top-[12%] md:w-[min(66vw,920px)]" />
-      <div aria-hidden="true" className="absolute right-[12vw] top-[42%] -z-10 aspect-square w-[55vw] rounded-full border border-[#d37ca955] shadow-[inset_0_0_80px_#c17ddd45] motion-safe:animate-[pulse_5s_ease-in-out_infinite] md:right-[14vw] md:top-[30%] md:w-[min(31vw,430px)]" />
       <ScrollReveal className="mx-auto max-w-[1304px]"><SectionLabel>Who We Are</SectionLabel><h1 className="my-[22px] max-w-[850px] text-[54px] font-medium leading-[.9] tracking-[-.07em] md:mb-6 md:text-[clamp(52px,6vw,88px)]">Built On Research<br />And Innovation</h1><div className="max-w-[680px] space-y-3 text-[clamp(15px,1.35vw,18px)] leading-[1.6] text-[#44354e]"><p>AIM Foundation (AI &amp; MedTech Alliance Foundation) is a Section 8 not-for-profit that builds healthcare innovation for India&apos;s public health system, anchored by its flagship, the Amaravati School of Biodesign.</p><p>The programmes built under the School are delivered with State Governments through existing public health workflows, alongside research that generates evidence built on Indian populations.</p></div></ScrollReveal>
     </section>
 
 
     <section className="bg-[#f2edf5] px-6 py-20 md:px-12 md:py-28"><div className="mx-auto max-w-[1304px]"><ScrollReveal><SectionLabel>Founding Principles</SectionLabel><h2 className="mt-5 max-w-[700px] text-[clamp(42px,5vw,72px)] font-medium leading-[.94] tracking-[-.07em]">How AIM Foundation approaches its work.</h2></ScrollReveal><div className="mt-12 grid gap-4 md:grid-cols-3">{principles.map(([number, title, text], index) => <ScrollReveal as="article" className="group rounded-2xl border border-[#d5c8dc] bg-white/70 p-6 transition duration-500 hover:-translate-y-2 hover:border-[#a84679] hover:shadow-[0_20px_38px_#4c356016]" delay={index * 110} key={number}><p className="font-serif text-[46px] leading-none tracking-[-.07em] text-[#a84679]">{number}</p><h3 className="mt-8 text-[22px] font-medium leading-[1.05] tracking-[-.04em]">{title}</h3><p className="mt-4 text-[14px] leading-[1.65] text-[#65566d]">{text}</p></ScrollReveal>)}</div></div></section>
-    <section className="bg-[#F7F5F8] px-6 py-24 md:px-12">
+    <section className="sdg-goals bg-[#F7F5F8] px-6 py-24 md:px-12">
       <div className="mx-auto max-w-[1304px]">
 
         <ScrollReveal>
           <SectionLabel>Sustainable Development Goals</SectionLabel>
 
-          <h2 className="mt-8 max-w-[760px] text-[clamp(44px,5vw,72px)] font-medium leading-[0.92] tracking-[-0.06em] text-[#4E2D91]">
+          <h2 className="mt-8 max-w-none text-[clamp(42px,4vw,54px)] font-medium leading-[0.92] tracking-[-0.06em] text-[#4E2D91]">
             Our work aligns with a specific set of UN goals.
           </h2>
 
@@ -59,7 +66,7 @@ export default function WhoWeArePage() {
 
         <div className="mt-16 grid gap-5">
 
-          {sdgs.map(([number, title, text], index) => (
+          {sdgs.map(([number, title, text, color], index) => (
 
             <ScrollReveal
               key={number}
@@ -72,7 +79,7 @@ export default function WhoWeArePage() {
 
                 <div className="flex items-center justify-between">
 
-                  <div className="rounded-full bg-[#4E2D91] px-5 py-2 text-sm font-bold tracking-[0.15em] text-white">
+                  <div className="sdg-badge rounded-full px-5 py-2 text-sm font-bold tracking-[0.15em] text-white" style={{ backgroundColor: color }}>
                     {number}
                   </div>
 
@@ -93,7 +100,7 @@ export default function WhoWeArePage() {
               {/* Desktop */}
               <div className="hidden items-center rounded-2xl border border-[#D8C7E8] bg-white px-6 py-5 shadow-[0_8px_30px_rgba(74,45,145,0.08)] transition-all duration-300 hover:-translate-y-1 hover:border-[#5A2EA6] hover:shadow-[0_16px_40px_rgba(74,45,145,0.16)] md:flex">
 
-                <div className="flex h-12 min-w-[86px] items-center justify-center rounded-full bg-[#4E2D91] px-4 text-white shadow-md">
+                <div className="sdg-badge flex h-12 min-w-[86px] items-center justify-center rounded-full px-4 text-white shadow-md" style={{ backgroundColor: color }}>
                   <span className="text-[13px] font-bold tracking-[0.18em]">
                     {number}
                   </span>
@@ -131,50 +138,42 @@ export default function WhoWeArePage() {
         <ScrollReveal>
           <SectionLabel>Our Partners</SectionLabel>
 
-          <h2 className="mt-8 max-w-[780px] text-[clamp(48px,5vw,72px)] font-medium leading-[0.92] tracking-[-0.06em] text-[#4E2D91]">
+          <h2 className="mt-8 max-w-none text-[clamp(42px,4vw,54px)] font-medium leading-[0.92] tracking-[-0.06em] text-[#4E2D91]">
             Collaboration is how delivery works.
           </h2>
 
-          <p className="mt-8 max-w-[760px] text-[18px] leading-8 text-[#65566D]">
+          <p className="mt-8 max-w-none text-[18px] leading-8 text-[#65566D]">
             AIM Foundation&apos;s work is delivered through a network of government,
             clinical, academic and international partners. Each partnership is
             an operational relationship, not a general affiliation.
           </p>
         </ScrollReveal>
 
-        {/* Cards */}
-        <div className="mt-20 grid gap-8 lg:grid-cols-2">
+        <div className="our-partners-showcase mt-16 grid gap-6 lg:grid-cols-2">
           {partnerGroups.map(([group, partners], groupIndex) => (
             <ScrollReveal
               key={group}
               delay={groupIndex * 120}
-              className="rounded-3xl border border-[#E5E0EC] bg-[#FCFBFD] p-8 shadow-[0_10px_35px_rgba(74,45,145,0.08)]"
+              className="partners-group rounded-[28px] border border-[#E4DEEC] bg-white p-6 md:p-9"
             >
-              <div className="mb-8 flex items-center gap-4">
+              <div className="mb-6 flex items-center gap-4 md:mb-8">
                 <div className="h-px flex-1 bg-[#DDD2EA]" />
 
-                <h3 className="whitespace-nowrap text-xs font-semibold uppercase tracking-[0.25em] text-[#6B49A8]">
+                <h3 className="text-center text-[11px] font-semibold uppercase tracking-[0.12em] text-[#6B49A8] md:whitespace-nowrap">
                   {group}
                 </h3>
 
                 <div className="h-px flex-1 bg-[#DDD2EA]" />
               </div>
 
-              <div className="space-y-5">
-                {partners.map(([name, detail]) => (
-                  <article
-                    key={name}
-                    className="rounded-2xl border border-[#ECE6F3] bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#4E2D91] hover:shadow-lg"
-                  >
-                    <h4 className="text-2xl font-medium text-[#392D57]">
-                      {name}
-                    </h4>
-
-                    <p className="mt-3 text-[16px] leading-8 text-[#67627A]">
-                      {detail}
-                    </p>
-                  </article>
-                ))}
+              <div className="grid gap-4 sm:grid-cols-2">
+                {partners.map(([name]) => {
+                  const logo = partnerLogos[name];
+                  return <article key={name} className="partner-tile flex min-h-[188px] flex-col items-center justify-center rounded-2xl border border-[#E4DEEC] bg-white p-5 text-center transition duration-300 hover:-translate-y-1 hover:border-[#6B4A9C]">
+                    {logo ? <Image className="h-[92px] w-full object-contain" src={logo} alt={name} width={280} height={140} sizes="(max-width: 640px) 100vw, 280px" /> : <p className="font-[family-name:var(--font-playfair)] text-[clamp(22px,2.4vw,32px)] font-medium leading-[1.05] text-[#43286E]">{name}</p>}
+                    <h4 className={`mt-4 text-[13px] font-bold uppercase leading-[1.35] tracking-[.04em] text-[#43286E] ${logo ? "" : "sr-only"}`}>{name}</h4>
+                  </article>;
+                })}
               </div>
             </ScrollReveal>
           ))}
@@ -185,8 +184,8 @@ export default function WhoWeArePage() {
 
     <section className="team-section px-6 py-20 md:px-12 md:py-28">
       <div className="mx-auto max-w-[1304px]">
-        <ScrollReveal>
-          <p className="team-kicker">Who we are</p>
+        <ScrollReveal >
+    
           <h2 className="team-title">Meet Our Team</h2>
         </ScrollReveal>
         <div className="team-groups mt-10 md:mt-14">
@@ -198,7 +197,7 @@ export default function WhoWeArePage() {
                   <ScrollReveal as="article" className="team-card" delay={(groupIndex + index) * 70} key={member.name} tabIndex="0">
                     <div className="team-card__inner">
                       <div className="team-card__face team-card__face--front">
-                        <img src={teamData.photos[(index + groupIndex * 2) % teamData.photos.length]} alt={member.name} />
+                        <img src={member.image} alt={member.name} />
                         <div className="team-card__front-caption">
                           <span>{member.role}</span>
                           <p>{member.name}</p>
@@ -223,7 +222,7 @@ export default function WhoWeArePage() {
     <section className="bg-[#F7F5F8] px-5 py-16 md:px-12 md:py-24 lg:py-32">
       <div className="mx-auto max-w-[1304px]">
         <ScrollReveal>
-          <div className="overflow-hidden border border-[#DDD7E7] border-t-[4px] border-t-[#5A2EA6] bg-white shadow-[0_18px_50px_rgba(0,0,0,0.08)]">
+          <div className="closing-cta-card overflow-hidden">
 
             <div className="grid gap-10 px-6 py-10 md:grid-cols-[1fr_auto] md:items-end md:gap-16 md:px-16 md:py-20">
 

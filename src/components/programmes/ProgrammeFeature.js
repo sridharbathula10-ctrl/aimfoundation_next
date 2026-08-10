@@ -25,11 +25,10 @@ export default function ProgrammeFeature({ programme }) {
   return <article className="group mt-[59px] pb-[58px] first:mt-[59px] [&+article]:border-t [&+article]:border-[#c8bdce] [&+article]:pt-[60px] md:mt-[93px] md:pb-[88px] md:[&+article]:pt-[88px]" id={programme.id}>
     <div className={`grid gap-8 border-b border-[#b6a7c355] pb-8 md:grid-cols-[1.1fr_.9fr] md:gap-[9vw] ${isJanani ? "md:pb-10" : "md:pb-[70px]"}`}>
       <ScrollReveal>
-        <p className="mb-5 mt-0 font-mono text-[12px] font-medium tracking-[.14em] text-[#9e87b0]">{programme.number}</p>
         <h3 className="m-0 max-w-[650px] text-[47px] font-medium leading-[.93] tracking-[-.073em] text-[#53318f] transition duration-300 group-hover:text-[#7a2453] md:text-[clamp(47px,5.4vw,78px)]">{programme.name}</h3>
+        <p className="mt-5 font-mono text-[12px] font-semibold uppercase leading-[1.45] tracking-[.06em] text-[#8d245b]">{programme.strapline}</p>
       </ScrollReveal>
       <ScrollReveal delay={120} direction="left">
-        <p className="mb-[22px] mt-1 font-mono text-[12px] font-semibold uppercase leading-[1.45] tracking-[.06em] text-[#8d245b]">{programme.strapline}</p>
         <ProgrammeTags featured twoLine twoColumn={programme.id === "janani-mitra"} items={programme.tags} />
       </ScrollReveal>
     </div>

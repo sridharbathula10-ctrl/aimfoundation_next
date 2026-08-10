@@ -30,15 +30,13 @@ export default function GetInvolvedPage() {
 
     <section className="relative isolate overflow-hidden bg-[#fffafd] px-6 pb-20 pt-40 md:px-12 md:pb-28 md:pt-[220px]">
       <div aria-hidden="true" className="absolute inset-0 -z-20 opacity-55 [background-image:linear-gradient(#76528c12_1px,transparent_1px),linear-gradient(90deg,#76528c12_1px,transparent_1px)] [background-size:64px_64px] [mask-image:linear-gradient(to_bottom,black,transparent)]" />
-      <div aria-hidden="true" className="absolute -right-[20vw] top-[9%] -z-10 aspect-square w-[78vw] rounded-full border border-[#b693c744] shadow-[0_0_0_64px_#cdb4dc14,0_0_0_128px_#cdb4dc0b] md:-right-[7vw] md:w-[min(49vw,720px)]" />
       <ScrollReveal className="mx-auto max-w-[1304px]">
         <SectionLabel>Get Involved</SectionLabel>
         <h1 className="mt-6 max-w-[850px] text-[clamp(54px,7vw,96px)] font-medium leading-[.88] tracking-[-.075em]">Support Work<br /><span className="font-serif font-medium">That Reaches Scale.</span></h1>
         <p className="mt-7 max-w-[690px] text-[16px] leading-[1.65] text-[#5f5269] md:text-[19px]">AIM Foundation operates programmes that need specific support to deliver at scale. The requirements below name what each programme needs and what your support will fund.</p>
       </ScrollReveal>
     </section>
-
-    <section className="bg-[#f4eef7] px-6 py-20 md:px-12 md:py-28" aria-labelledby="legal-status-heading">
+    {/* <section className="bg-[#f4eef7] px-6 py-20 md:px-12 md:py-28" aria-labelledby="legal-status-heading">
       <div className="mx-auto max-w-[1304px]">
         <ScrollReveal><SectionLabel>Legal Status</SectionLabel><h2 id="legal-status-heading" className="mt-5 text-[clamp(42px,5vw,72px)] font-medium leading-[.94] tracking-[-.07em]">A clear basis for support.</h2></ScrollReveal>
         <div className="mt-12 grid gap-4 md:grid-cols-2">
@@ -79,9 +77,9 @@ export default function GetInvolvedPage() {
           </form>
         </ScrollReveal>
       </div>
-    </section>
+    </section> */}
 
-    <section className="bg-[#f4eef7] px-6 py-20 md:px-12 md:py-28" aria-labelledby="map-heading"><div className="mx-auto max-w-[1304px]"><ScrollReveal><SectionLabel>Find Us</SectionLabel><h2 id="map-heading" className="mt-5 text-[clamp(42px,4.8vw,68px)] font-medium leading-[.94] tracking-[-.07em]">Visit AIM Foundation.</h2></ScrollReveal><ScrollReveal className="mt-10 overflow-hidden rounded-2xl border border-[#d8c8e1] bg-white shadow-[0_12px_28px_#4c35600b]" delay={100}><iframe className="h-[380px] w-full border-0" title="AIM Foundation location" loading="lazy" src="https://www.google.com/maps?q=C%20206%2C%20Trendset%20Rythme%2C%20White%20Field%20Road%2C%20Kondapur%2C%20Telangana%20500%20084&output=embed" /></ScrollReveal></div></section>
- 
+    {/* <section className="bg-[#f4eef7] px-6 py-20 md:px-12 md:py-28" aria-labelledby="map-heading"><div className="mx-auto max-w-[1304px]"><ScrollReveal><SectionLabel>Find Us</SectionLabel><h2 id="map-heading" className="mt-5 text-[clamp(42px,4.8vw,68px)] font-medium leading-[.94] tracking-[-.07em]">Visit AIM Foundation.</h2></ScrollReveal><ScrollReveal className="mt-10 overflow-hidden rounded-2xl border border-[#d8c8e1] bg-white shadow-[0_12px_28px_#4c35600b]" delay={100}><iframe className="h-[380px] w-full border-0" title="AIM Foundation location" loading="lazy" src="https://www.google.com/maps?q=C%20206%2C%20Trendset%20Rythme%2C%20White%20Field%20Road%2C%20Kondapur%2C%20Telangana%20500%20084&output=embed" /></ScrollReveal></div></section> */}
+  
   </main>;
 }

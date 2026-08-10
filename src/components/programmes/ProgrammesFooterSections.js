@@ -10,7 +10,7 @@ const shell =
   "mx-auto max-w-[1304px] px-6 md:px-12";
 
 const heading =
-  "text-[clamp(42px,5vw,68px)] font-medium leading-[0.94] tracking-[-0.06em] text-[#4E2D91]";
+  "text-[clamp(34px,4vw,54px)] font-medium leading-[0.94] tracking-[-0.06em] text-[#4E2D91]";
 
 
 const pilotSlides = [
@@ -64,7 +64,7 @@ export function ProgrammesCta() {
   return (
     <section className="bg-[#F7F5F8] py-16 md:py-24 lg:py-32">
       <div className={shell}>
-        <div className="overflow-hidden border border-[#E5E0EC] border-t-[4px] border-t-[#4E2D91] bg-white shadow-[0_18px_50px_rgba(0,0,0,0.08)]">
+        <div className="closing-cta-card overflow-hidden">
 
           <div className="grid gap-10 px-6 py-10 md:grid-cols-[1fr_auto] md:items-end md:gap-16 md:px-16 md:py-20">
 

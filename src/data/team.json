@@ -11,33 +11,35 @@
     {
       "title": "Board of Directors",
       "members": [
-        { "name": "Dr. D. Nageshwar Reddy", "role": "Chairman", "credential": "Chairman, AIG Hospitals", "bio": "A globally acclaimed gastroenterologist and the Chairman of AIG Hospitals and AIM Foundation. He is leading work to integrate AI and digital innovation into medical practice, with a focus on accessibility, sustainability and cross-sector collaboration for rural India." },
-        { "name": "Dr. Rakesh Kalapala", "role": "Board Member", "credential": "Director, Bariatric Endoscopy & Centre for AI and Innovation, AIG Hospitals", "bio": "A pioneering expert in advanced endoscopy. As a Board Member he leads efforts to integrate AI into healthcare, driving innovation for accessible and impactful medical solutions across India." },
-        { "name": "Dr. Prateek Sharma", "role": "Board Member", "credential": "Professor of Medicine, University of Kansas; President, ASGE", "bio": "Director of Fellowship Training and holder of the Elaine Blaylock Endowed Cancer Professorship at the KU Cancer Center. He is President of the American Society for Gastrointestinal Endoscopy and Chair of the AI Institute for Gastroenterology." },
-        { "name": "Priya Iyengar", "role": "Board Member", "credential": "Founder, Compass Law Associates & Compass Dispute Resolutions", "bio": "A legal expert bringing deep expertise in healthcare law and technology policy, guiding ethical innovation in AI-driven healthcare and rural health transformation." },
-        { "name": "Dr. Naresh Kumar Padigimarry", "role": "Board Member", "credential": "Co-Founder & CEO, CSSH", "bio": "A Purdue-educated biomedical engineer. CSSH is India's first integrated spine and sports health platform, developed with Nordic Health and VALD at the Pullela Gopichand Academy." },
-        { "name": "Dr. Nikhil Agarwal", "role": "Board Member", "credential": "Director, Max Hospitals, Delhi & Gurugram", "bio": "A GI-HPB surgical oncologist specialising in complex gastrointestinal and hepatopancreatobiliary cancers, with expertise in advanced laparoscopic and robotic surgery." }
+        { "name": "Dr. D. Nageshwar Reddy",
+        "image": "/team/nr.webp",
+         "role": "Chairman", "credential": "Chairman, AIG Hospitals", "bio": "A globally acclaimed gastroenterologist and the Chairman of AIG Hospitals and AIM Foundation. He is leading work to integrate AI and digital innovation into medical practice, with a focus on accessibility, sustainability and cross-sector collaboration for rural India." },
+        { "name": "Dr. Rakesh Kalapala", "image": "/team/rk.webp", "role": "Board Member", "credential": "Director, Bariatric Endoscopy & Centre for AI and Innovation, AIG Hospitals", "bio": "A pioneering expert in advanced endoscopy. As a Board Member he leads efforts to integrate AI into healthcare, driving innovation for accessible and impactful medical solutions across India." },
+        { "name": "Dr. Prateek Sharma", "image": "/team/prateek.webp", "role": "Board Member", "credential": "Professor of Medicine, University of Kansas; President, ASGE", "bio": "Director of Fellowship Training and holder of the Elaine Blaylock Endowed Cancer Professorship at the KU Cancer Center. He is President of the American Society for Gastrointestinal Endoscopy and Chair of the AI Institute for Gastroenterology." },
+        { "name": "Priya Iyengar", "image": "/team/priya.webp", "role": "Board Member", "credential": "Founder, Compass Law Associates & Compass Dispute Resolutions", "bio": "A legal expert bringing deep expertise in healthcare law and technology policy, guiding ethical innovation in AI-driven healthcare and rural health transformation." },
+        { "name": "Dr. Naresh Kumar Padigimarry", "image": "/team/nk.webp", "role": "Board Member", "credential": "Co-Founder & CEO, CSSH", "bio": "A Purdue-educated biomedical engineer. CSSH is India's first integrated spine and sports health platform, developed with Nordic Health and VALD at the Pullela Gopichand Academy." },
+        { "name": "Dr. Nikhil Agarwal", "image": "/team/nikil.webp", "role": "Board Member", "credential": "Director, Max Hospitals, Delhi & Gurugram", "bio": "A GI-HPB surgical oncologist specialising in complex gastrointestinal and hepatopancreatobiliary cancers, with expertise in advanced laparoscopic and robotic surgery." }
       ]
     },
     {
       "title": "Advisory Board",
       "members": [
-        { "name": "Dr. Barsham Abu Dayyeh", "role": "Advisory Board", "credential": "Executive Director for Innovation, Cedars-Sinai", "bio": "MD, MPH. Director of Interventional Gastroenterology and Associate Dean for Innovation at Cedars-Sinai's Karsh Division of Gastroenterology, known for pioneering work in minimally invasive endoscopic therapies." }
+        { "name": "Dr. Barsham Abu Dayyeh","image": "/team/barsham.webp", "role": "Advisory Board", "credential": "Executive Director for Innovation, Cedars-Sinai", "bio": "MD, MPH. Director of Interventional Gastroenterology and Associate Dean for Innovation at Cedars-Sinai's Karsh Division of Gastroenterology, known for pioneering work in minimally invasive endoscopic therapies." }
       ]
     },
     {
       "title": "Clinical Advisory",
       "members": [
-        { "name": "Dr. Madhulika Arutla", "role": "Clinical Nutrition Advisor", "credential": "Head, Department of Clinical Nutrition and Dietetics, AIG Hospitals", "bio": "Validates the nutritional guidance for Janani Mitra." }
+        { "name": "Dr. Madhulika Arutla","image": "/team/madhulika.webp", "role": "Clinical Nutrition Advisor", "credential": "Head, Department of Clinical Nutrition and Dietetics, AIG Hospitals", "bio": "Validates the nutritional guidance for Janani Mitra." }
       ]
     },
     {
       "title": "Management Team",
       "members": [
-        { "name": "Surya Vasireddy", "role": "General Manager, Strategy & Operations", "credential": "AIM Foundation", "bio": "An operations leader with experience across healthcare, retail and the social sector. He leads strategy and operations at AIM Foundation, overseeing programme delivery across government and clinical partnerships." },
-        { "name": "Sreenivasulu Naidu", "role": "Manager – Admin", "credential": "AIM Foundation", "bio": "Oversees administrative activities and day-to-day operations to support the smooth implementation and effective execution of AIM Foundation's work." },
-        { "name": "Kranthi Kumar", "role": "Manager – Field Operations", "credential": "AIM Foundation", "bio": "Contributes to the implementation of Janani Mitra through programme coordination, field implementation, stakeholder engagement and training." },
-        { "name": "Rinith Reddy Pendru", "role": "Associate Product Manager", "credential": "AIM Foundation", "bio": "An engineering graduate who moved from internship to a full-time role at AIM Foundation." }
+        { "name": "Surya Vasireddy", "image": "/team/surya.webp", "role": "General Manager, Strategy & Operations", "credential": "AIM Foundation", "bio": "An operations leader with experience across healthcare, retail and the social sector. He leads strategy and operations at AIM Foundation, overseeing programme delivery across government and clinical partnerships." },
+        { "name": "Sreenivasulu Naidu", "image": "/team/sreenivasulu.webp", "role": "Manager – Admin", "credential": "AIM Foundation", "bio": "Oversees administrative activities and day-to-day operations to support the smooth implementation and effective execution of AIM Foundation's work." },
+        { "name": "Kranthi Kumar", "image": "/team/kranthi.webp", "role": "Manager – Field Operations", "credential": "AIM Foundation", "bio": "Contributes to the implementation of Janani Mitra through programme coordination, field implementation, stakeholder engagement and training." },
+        { "name": "Rinith Reddy Pendru", "image": "/team/rinith.webp", "role": "Associate Product Manager", "credential": "AIM Foundation", "bio": "An engineering graduate who moved from internship to a full-time role at AIM Foundation." }
       ]
     }
   ]

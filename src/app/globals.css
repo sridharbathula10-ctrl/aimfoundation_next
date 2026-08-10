@@ -85,7 +85,7 @@ body * {
     perspective: 1100px;
     border-radius: 13px;
     background: transparent;
-    box-shadow: none;
+    box-shadow: 0 24px 50px rgba(38, 48, 71, .12);
     cursor: pointer;
     outline: none;
 }
@@ -159,11 +159,13 @@ body * {
 .team-card__face--back {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 26px 22px;
     background: #fff;
     color: #34313b;
     transform: rotateY(180deg);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .team-card__face--back h4 {
@@ -406,7 +408,9 @@ body * {
 
 .primary-nav a {
     position: relative;
-    font-size: 13px;
+    color: #221A30;
+    font-size: 15px;
+    font-weight: 700;
     opacity: .86;
     transition: opacity .25s, color .25s
 }
@@ -418,7 +422,7 @@ body * {
     bottom: -8px;
     left: 0;
     height: 1px;
-    background: #9a376b;
+    background: #43286E;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform .25s ease
@@ -427,7 +431,7 @@ body * {
 .primary-nav a:hover,
 .primary-nav a.is-active {
     opacity: 1;
-    color: var(--ink)
+    color: #43286E
 }
 
 .primary-nav a:hover:not(.mobile-involved)::after,
@@ -908,14 +912,13 @@ body * {
 .footer-inner {
     display: grid;
     grid-template-columns: 1.4fr .6fr .9fr;
-    gap: 40px;
-    padding-bottom: 80px
+    gap: 40px
 }
 
 .footer-intro>p {
-    font: 600 18px/1.45 "Playfair Display", serif;
+    font: 600 15px/1.45 "Playfair Display", serif;
     max-width: 235px;
-    margin: 30px 0
+    margin: 10px 0
 }
 
 .footer-mail {
@@ -1249,8 +1252,8 @@ body * {
         border-radius: 999px !important;
         background: var(--accent);
         color: var(--ink) !important;
-        font-size: 13px;
-        font-weight: 600
+        font-size: 15px;
+        font-weight: 700
     }
 
     .menu-toggle {
@@ -1657,6 +1660,7 @@ body * {
 .news-card h3 {
     margin: 18px 0 12px;
     font-size: 18px;
+    font-weight: 700;
     line-height: 1.28;
     letter-spacing: -.035em
 }
@@ -1979,14 +1983,16 @@ body * {
 
 .header-cta,
 .header-cta.is-active {
-    background: #402f5a;
+    background: #43286E;
     color: #fff !important;
-    box-shadow: 0 8px 18px #402f5a26
+    box-shadow: 0 8px 18px #43286E26;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 .header-cta:hover {
-    background: #50308d;
-    box-shadow: 0 12px 22px #402f5a33
+    background: #43286E;
+    box-shadow: 0 12px 22px #43286E33
 }
 
 .header-cta,
@@ -2020,7 +2026,7 @@ body * {
 
     .mobile-involved,
     .mobile-involved span {
-        background: #402f5a !important;
+        background: #43286E !important;
         color: #fff !important
     }
 }
@@ -2818,7 +2824,7 @@ body * {
 }
 
 [class*="bg-[linear-gradient(to_top,#21152f"] {
-    background: linear-gradient(to_top, #fffdfdd9, transparent_65%) !important
+    background: linear-gradient(to top, #fffdfdd9, transparent 65%) !important;
 }
 
 [class*="bg-[#2a1d3d]"] [class*="text-white"],
@@ -2833,11 +2839,11 @@ body * {
 
 /* Headings retain the primary brand purple rather than black. */
 body :is(h1, h2, h3, h4, h5, h6) {
-    color: #50308d !important
+    color: #50308d !important;
 }
 
 .donor-title {
-    color: #Built On Research And Innovation. 50308d !important
+    color: #50308d !important;
 }
 
 .news-card__link,
@@ -3304,4 +3310,502 @@ main.who-we-are-page>section:nth-child(4) .eyebrow span {
 
 .who-we-are-page>section:nth-child(4) article p:not(:first-child) {
     color: #e9e0ef !important
+}
+
+/* Homepage hero: unified type hierarchy and responsive visual/card order. */
+.homepage-hero {
+    overflow: hidden;
+    background: #fff;
+    color: #221A30;
+}
+
+.homepage-hero__inner {
+    display: grid;
+    grid-template-columns: minmax(0, .93fr) minmax(420px, 1.07fr);
+    align-items: center;
+    gap: clamp(36px, 6vw, 104px);
+    width: min(1400px, 100%);
+    min-height: 760px;
+    margin: 0 auto;
+    padding: 148px 48px 76px;
+}
+
+.homepage-hero .section-eyebrow {
+    color: #6B4A9C;
+}
+
+.homepage-hero .section-eyebrow::before {
+    background: #6B4A9C;
+}
+
+.homepage-hero h1 {
+    max-width: 720px;
+    margin: 18px 0 0;
+    color: #43286E;
+    font-size: clamp(44px, 4.35vw, 72px);
+    font-weight: 600;
+    line-height: .98;
+    letter-spacing: -.055em !important;
+}
+
+.homepage-hero__intro {
+    max-width: 525px;
+    margin: 26px 0 0;
+    color: #221A30;
+    font-size: 17px;
+    line-height: 1.62;
+}
+
+.homepage-hero__intro--secondary {
+    margin-top: 14px;
+}
+
+.homepage-hero__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding: 13px 18px;
+    border-radius: 999px;
+    background: #43286E;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.homepage-hero__cta:hover {
+    color: #fff;
+    box-shadow: 0 10px 20px #43286E33;
+    transform: translateY(-2px);
+}
+
+.homepage-hero__cta svg {
+    width: 18px;
+    height: 18px;
+}
+
+.homepage-hero__visual-column {
+    display: grid;
+    justify-items: end;
+    gap: 24px;
+    min-width: 0;
+}
+
+.homepage-hero__artwork {
+    width: min(100%, 720px);
+    animation: hero-image-enter .8s ease-out both, hero-image-float 7s ease-in-out 1s infinite;
+}
+
+.homepage-hero__artwork img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.homepage-hero .hero-why-card {
+    position: static;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    justify-self: center;
+    width: min(100%, 420px);
+    padding: 24px 26px;
+    border: 1px solid #E4DEEC;
+    border-radius: 14px;
+    background: #F2ECF7 !important;
+    box-shadow: none;
+    text-align: center;
+    animation: text-enter .75s .25s ease-out both;
+}
+
+.homepage-hero .hero-why-card h2 {
+    margin: 0;
+    color: #43286E;
+    font: 600 clamp(28px, 2.5vw, 38px)/1 "Playfair Display", serif;
+    letter-spacing: -.04em !important;
+}
+
+.homepage-hero .hero-why-card h2::before {
+    display: none;
+}
+
+.homepage-hero .hero-why-card p:last-child {
+    margin: 12px 0 0;
+    color: #221A30;
+    font-size: 15px;
+    line-height: 1.58;
+}
+
+@media (max-width: 800px) {
+    .homepage-hero__inner {
+        grid-template-columns: 1fr;
+        gap: 34px;
+        min-height: 0;
+        padding: 122px 0 48px;
+    }
+
+    .homepage-hero__content,
+    .homepage-hero__visual-column {
+        width: auto;
+        margin-inline: 24px;
+    }
+
+    .homepage-hero h1 {
+        font-size: clamp(42px, 12vw, 58px);
+    }
+
+    .homepage-hero__intro {
+        max-width: none;
+        font-size: 16px;
+    }
+
+    .homepage-hero__visual-column {
+        justify-items: stretch;
+        gap: 18px;
+    }
+
+    .homepage-hero__artwork {
+        width: 100%;
+        margin: 0;
+    }
+
+    .homepage-hero .hero-why-card {
+        width: 100%;
+        margin-inline: auto;
+        padding: 22px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .homepage-hero__artwork,
+    .homepage-hero .hero-why-card {
+        animation: none;
+    }
+}
+
+/* Site-wide foundation: palette, spacing, section rhythm, and card system. */
+:root {
+    --background: #FFFFFF;
+    --foreground: #221A30;
+    --ink: #221A30;
+    --plum-deep: #43286E;
+    --plum-mid: #6B4A9C;
+    --plum-soft: #B9A3D6;
+    --lavender: #F2ECF7;
+    --hairline: #E4DEEC;
+    --section-space: clamp(24px, 3vw, 36px);
+    --card-gap: 20px;
+    --card-radius: 14px;
+}
+
+body {
+    background: #FFFFFF;
+    color: #221A30;
+}
+
+/* A single non-gradient surface language throughout the site. */
+body *,
+body *::before,
+body *::after {
+    background-image: none !important;
+    mask-image: none !important;
+}
+
+.site-header,
+.site-header.is-scrolled {
+    background: #FFFFFF;
+    box-shadow: none;
+}
+
+.site-header.is-scrolled {
+    border-bottom-color: #E4DEEC;
+}
+
+main > section:first-of-type {
+    background-color: #FFFFFF !important;
+}
+
+main > section:not(:first-of-type) {
+    margin-block: 0 !important;
+    padding-block: var(--section-space) !important;
+}
+
+main > section:nth-of-type(even) {
+    background-color: #F2ECF7 !important;
+}
+
+main > section:nth-of-type(odd):not(:first-of-type) {
+    background-color: #FFFFFF !important;
+}
+
+/* Every heading, label, and text block uses the shared type palette. */
+main :is(h1, h2, h3, h4, h5, h6) {
+    color: #43286E !important;
+}
+
+main :is(p, li, dd, dt, figcaption, small, address, time, label) {
+    color: #221A30 !important;
+}
+
+main :is(.eyebrow, .eyebrow--dark, .section-eyebrow, [class*="eyebrow"]) {
+    color: #6B4A9C !important;
+}
+
+main a {
+    color: #43286E !important;
+}
+
+main a:hover:not(.homepage-hero__cta) {
+    color: #6B4A9C !important;
+}
+
+/* One card treatment, with lavender reserved for panels inside white cards. */
+main :is(article, [class*="card"], [class*="Card"]) {
+    background-color: #FFFFFF !important;
+    box-shadow: none !important;
+}
+
+main :is([class*="panel"], [class*="Panel"], [class*="metric"], [class*="Metric"]):not(.metric-bar) {
+    border-color: #E4DEEC !important;
+    background-color: #F2ECF7 !important;
+}
+
+main :is([class*="grid"], [class*="Grid"], [class*="cards"], [class*="Cards"]) {
+    gap: var(--card-gap);
+}
+
+.partnerships-grid {
+    gap: 12px !important;
+}
+
+/* News source and date are primary metadata, not subdued captions. */
+.news-card__meta {
+    font-size: 12px !important;
+    font-weight: 600;
+}
+
+.news-card__meta span,
+.news-card__meta time {
+    color: #221A30 !important;
+    font-size: 12px !important;
+}
+
+.news-card__link {
+    align-items: center;
+    gap: 4px;
+    margin-top: auto;
+    padding-top: 28px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #43286E;
+    color: #43286E !important;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.news-card__link svg {
+    transition: transform .3s ease;
+}
+
+.news-card:hover .news-card__link svg {
+    transform: translate(4px, -4px);
+}
+
+/* Inverted closing call-to-action. */
+main .closing-cta-card {
+    background: #43286E !important;
+}
+
+.closing-cta-card :is(h1, h2, h3, h4, h5, h6, p, .section-eyebrow) {
+    color: #FFFFFF !important;
+}
+
+.closing-cta-card .section-eyebrow::before {
+    background: #FFFFFF !important;
+}
+
+.closing-cta-card a {
+    background: #FFFFFF !important;
+    color: #43286E !important;
+}
+
+.closing-cta-card a :is(svg, path) {
+    color: currentColor !important;
+}
+
+main :is(button, .button, [class*="cta"], [class*="CTA"]) {
+    background-color: #43286E;
+    color: #FFFFFF !important;
+}
+
+main :is(button, .button, [class*="cta"], [class*="CTA"]) :is(svg, span) {
+    color: inherit !important;
+}
+
+.statistic-card {
+    min-height: 122px !important;
+    border: 0 !important;
+    border-radius: var(--card-radius) !important;
+    background: #FFFFFF !important;
+    box-shadow: none !important;
+}
+
+.statistic-card__value {
+    color: #43286E !important;
+}
+
+.biodesign-method-card {
+    border: 1px solid #E4DEEC !important;
+    background: #FFFFFF !important;
+}
+
+.biodesign-method-card__eyebrow {
+    font-size: 13px;
+}
+
+.biodesign-method-card .biodesign-method-card__info {
+    border: 1px solid #E4DEEC !important;
+    background: #F2ECF7 !important;
+}
+
+/* Official UN SDG colours are reserved for goal identifiers; the shared plum
+   palette remains the visual foundation for every other surface. */
+main > section.sdg-goals {
+    background: #F2ECF7 !important;
+}
+
+.sdg-goals .sdg-badge {
+    color: #FFFFFF !important;
+}
+
+/* Programme detail keys are an anchored navigation aid, not muted metadata. */
+main section[aria-labelledby="school-heading"] article > h3,
+main article[id] article > h4 {
+    padding-left: clamp(12px, 1.8vw, 24px);
+    color: #43286E !important;
+    font-weight: 700 !important;
+}
+
+main section[aria-labelledby="school-heading"] h2 + p {
+    margin-top: 0.5rem !important;
+}
+
+/* Partner groups mirror the structured, logo-led treatment in the reference. */
+.our-partners-showcase .partners-group {
+    background: #FFFFFF !important;
+    border-radius: 28px !important;
+    box-shadow: 0 14px 32px rgba(67, 40, 110, .06) !important;
+}
+
+.our-partners-showcase .partner-tile {
+    background-color: #F2ECF7 !important;
+    background-image: none !important;
+    min-height: 190px;
+    box-shadow: none !important;
+}
+
+/* Flagship support callout follows the white-card / lavender-section system. */
+main [class*="bg-[#2a1d3d]"] {
+    border: 1px solid #E4DEEC !important;
+    background-color: #F2ECF7 !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+main [class*="bg-[#2a1d3d]"] > [aria-hidden] {
+    display: none;
+}
+
+main section[aria-labelledby="school-heading"] [class*="bg-[#2a1d3d]"] {
+    background-color: #FFFFFF !important;
+}
+
+main section[aria-labelledby="school-heading"] [class*="bg-[#2a1d3d]"] > [aria-hidden] {
+    display: none;
+}
+
+main section[aria-labelledby="school-heading"] [class*="bg-[#2a1d3d]"] > p:first-of-type {
+    color: #43286E !important;
+}
+
+main section[aria-labelledby="school-heading"] [class*="bg-[#2a1d3d]"] > p:last-of-type {
+    color: #221A30 !important;
+}
+
+main [class*="bg-[#2a1d3d]"] > p:first-of-type {
+    color: #43286E !important;
+}
+
+main [class*="bg-[#2a1d3d]"] > p:last-of-type {
+    color: #221A30 !important;
+}
+
+main section[aria-labelledby="school-heading"] .mt-7 > .will-change-transform a {
+    border-color: #43286E !important;
+    color: #43286E !important;
+}
+
+.site-footer {
+    border-top: 1px solid #E4DEEC;
+    background: #FFFFFF !important;
+    color: #221A30;
+}
+
+.site-footer :is(h1, h2, h3, h4, h5, h6, p, a, li, small, span, address) {
+    color: #221A30 !important;
+}
+
+.footer-cin {
+    font-size: 6px;
+}
+
+.footer-registration {
+    margin: 2px 0 0;
+    font: 500 7px "DM Mono", monospace;
+}
+
+.footer-label {
+    font-size: 13px;
+}
+
+.footer-base {
+    font-size: 14px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.social-links a svg {
+    width: 18px;
+    height: 18px;
+}
+
+@media (max-width: 800px) {
+    :root {
+        --section-space: 24px;
+        --card-gap: 16px;
+    }
+
+    main :is(.eyebrow, .eyebrow--dark, .section-eyebrow, [class*="eyebrow"]) {
+        gap: 8px;
+        margin-bottom: 14px;
+        font-size: 11px !important;
+        letter-spacing: .09em !important;
+    }
+
+    main :is(.eyebrow, .eyebrow--dark, .section-eyebrow, [class*="eyebrow"])::before {
+        width: 20px;
+    }
+
+    main > section:not(:first-of-type) {
+        padding-inline: 24px !important;
+    }
+
+    .statistic-card {
+        min-height: 108px !important;
+    }
 }

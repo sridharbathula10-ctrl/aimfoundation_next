@@ -10,7 +10,7 @@ export default function ClosingCtaSection() {
       aria-labelledby="closing-cta-heading"
     >
       <div className="mx-auto max-w-[1304px]">
-        <div className="overflow-hidden border border-[#E5E0EC] border-t-[4px] border-t-[#4E2D91] bg-white shadow-[0_18px_50px_rgba(0,0,0,0.08)]">
+        <div className="closing-cta-card overflow-hidden">
 
           <div className="grid gap-10 px-6 py-10 sm:px-8 md:grid-cols-[1fr_auto] md:items-end md:gap-16 md:px-16 md:py-20">
 
