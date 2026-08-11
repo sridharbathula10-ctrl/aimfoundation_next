@@ -43,7 +43,7 @@ export default function ClosingCtaSection() {
             >
               <Link
                 href="/get-involved"
-                className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-[#4E2D91] px-6 py-3 text-[15px] font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#3B2474] hover:shadow-xl md:gap-3 md:px-10 md:py-5 md:text-lg"
+                className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-[#4E2D91] px-6 py-3 text-[15px] font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#3B2474] hover:shadow-xl md:gap-3 md:px-8 md:py-4 md:text-[17px]"
               >
                 Get Involved
                 <FiArrowUpRight className="text-xl" />

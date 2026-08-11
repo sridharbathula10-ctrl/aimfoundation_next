@@ -36,6 +36,12 @@ const partnerLogos = {
   "Indian School of Business": "/images/isb.webp",
   "Indian Institute of Technology, Delhi": "/images/iit-delhi.webp",
   "IIIT Hyderabad": "/images/iiit-hyderabad.webp",
+  "Ratan Tata Innovation Hub, Amaravati":"/images/rtiv.jpeg",
+  "AIG Hospitals, Hyderabad": "/images/aig.jpeg",
+  "Stanford Mussallem Center for Biodesign": "/images/st.png",
+  "Biodesign Australia": "/images/bid.png",
+  "Biodesign Israel": "/images/bii.png",
+  "Forsys Inc.": "/images/fr.png",
 };
 
 function SectionLabel({ children }) { return <SectionEyebrow>{children}</SectionEyebrow>; }

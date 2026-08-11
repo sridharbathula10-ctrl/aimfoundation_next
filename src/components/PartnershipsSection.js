@@ -13,7 +13,7 @@ const partners = [
   },
   {
     name: "AIG Hospitals",
-    logo: "",
+     logo: "/images/aig.jpeg",
   },
   {
     name: "Indian School of Business",
@@ -29,19 +29,19 @@ const partners = [
   },
   {
     name: "Ratan Tata Innovation Hub",
-    logo: "",
+   logo: "/images/rtiv.jpeg",
   },
   {
     name: "Stanford Mussallem Center",
-    logo: "",
+    logo: "/images/st.png",
   },
   {
     name: "Biodesign Australia",
-    logo: "",
+     logo: "/images/bid.png",
   },
   {
     name: "Biodesign Israel",
-    logo: "",
+     logo: "/images/bii.png",
   },
 ];
 

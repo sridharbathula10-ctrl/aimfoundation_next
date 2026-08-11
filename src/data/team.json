@@ -30,16 +30,16 @@
     {
       "title": "Clinical Advisory",
       "members": [
-        { "name": "Dr. Madhulika Arutla","image": "/team/madhulika.webp", "role": "Clinical Nutrition Advisor", "credential": "Head, Department of Clinical Nutrition and Dietetics, AIG Hospitals", "bio": "Validates the nutritional guidance for Janani Mitra." }
+        { "name": "Dr. Madhulika Arutla","image": "/team/md.jpeg", "role": "Clinical Nutrition Advisor", "credential": "Head, Department of Clinical Nutrition and Dietetics, AIG Hospitals", "bio": "Validates the nutritional guidance for Janani Mitra." }
       ]
     },
     {
       "title": "Management Team",
       "members": [
-        { "name": "Surya Vasireddy", "image": "/team/surya.webp", "role": "General Manager, Strategy & Operations", "credential": "AIM Foundation", "bio": "An operations leader with experience across healthcare, retail and the social sector. He leads strategy and operations at AIM Foundation, overseeing programme delivery across government and clinical partnerships." },
-        { "name": "Sreenivasulu Naidu", "image": "/team/sreenivasulu.webp", "role": "Manager – Admin", "credential": "AIM Foundation", "bio": "Oversees administrative activities and day-to-day operations to support the smooth implementation and effective execution of AIM Foundation's work." },
-        { "name": "Kranthi Kumar", "image": "/team/kranthi.webp", "role": "Manager – Field Operations", "credential": "AIM Foundation", "bio": "Contributes to the implementation of Janani Mitra through programme coordination, field implementation, stakeholder engagement and training." },
-        { "name": "Rinith Reddy Pendru", "image": "/team/rinith.webp", "role": "Associate Product Manager", "credential": "AIM Foundation", "bio": "An engineering graduate who moved from internship to a full-time role at AIM Foundation." }
+        { "name": "Surya Vasireddy", "image": "/team/Surya_Vasireddy.jpeg", "role": "General Manager, Strategy & Operations", "credential": "AIM Foundation", "bio": "An operations leader with experience across healthcare, retail and the social sector. He leads strategy and operations at AIM Foundation, overseeing programme delivery across government and clinical partnerships." },
+        { "name": "Sreenivasulu Naidu", "image": "/team/Srinivas.jpeg", "role": "Manager – Admin", "credential": "AIM Foundation", "bio": "Oversees administrative activities and day-to-day operations to support the smooth implementation and effective execution of AIM Foundation's work." },
+        { "name": "Kranthi Kumar", "image": "/team/Kranthi.jpeg", "role": "Manager – Field Operations", "credential": "AIM Foundation", "bio": "Contributes to the implementation of Janani Mitra through programme coordination, field implementation, stakeholder engagement and training." },
+        { "name": "Rinith Reddy Pendru", "image": "/team/Rinith_Reddy.png", "role": "Associate Product Manager", "credential": "AIM Foundation", "bio": "An engineering graduate who moved from internship to a full-time role at AIM Foundation." }
       ]
     }
   ]

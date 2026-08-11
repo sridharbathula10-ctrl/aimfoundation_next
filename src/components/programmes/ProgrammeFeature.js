@@ -12,8 +12,8 @@ function ProgrammeDiagram({ id }) {
 
 function ProgrammePhoto({ id }) {
   const photo = id === "janani-mitra"
-    ? { src: "/images/ashaworker.png", alt: "ASHA worker supporting Janani Mitra", label: "Janani Mitra in practice" }
-    : { src: "/images/gms.png", alt: "Gut Microbiome Study sample collection", label: "Population health research" };
+    ? { src: "/images/ashaworker.png", alt: "ASHA worker supporting Janani Mitra", }
+    : { src: "/images/gms.png", alt: "Gut Microbiome Study sample collection", };
   return <figure className="relative mx-auto w-full max-w-[350px] overflow-hidden rounded-[22px] border border-[#d1c3da] bg-[#402f5a] shadow-[0_18px_38px_#4c356018]"><div className="relative aspect-[4/3]"><Image className="object-cover transition duration-700 group-hover:scale-[1.04]" src={photo.src} alt={photo.alt} fill sizes="(max-width: 768px) calc(100vw - 48px), 350px" /><div className="absolute inset-0 bg-[linear-gradient(to_top,#21152fe0,transparent_60%)]" /><figcaption className="absolute inset-x-0 bottom-0 p-5 font-mono text-[9px] font-semibold uppercase tracking-[.14em] text-[#f1d9fb]">{photo.label}</figcaption></div></figure>;
 }
 

@@ -2,6 +2,7 @@ import { FiArrowUpRight, FiMail, FiMapPin } from "react-icons/fi";
 import ScrollProgress from "../../components/ScrollProgress";
 import ScrollReveal from "../../components/ScrollReveal";
 import SectionEyebrow from "../../components/SectionEyebrow";
+import ContactForm from "../../components/ContactForm";
 
 export const metadata = {
   title: "Get Involved and Contact | AIM Foundation",
@@ -32,11 +33,11 @@ export default function GetInvolvedPage() {
       <div aria-hidden="true" className="absolute inset-0 -z-20 opacity-55 [background-image:linear-gradient(#76528c12_1px,transparent_1px),linear-gradient(90deg,#76528c12_1px,transparent_1px)] [background-size:64px_64px] [mask-image:linear-gradient(to_bottom,black,transparent)]" />
       <ScrollReveal className="mx-auto max-w-[1304px]">
         <SectionLabel>Get Involved</SectionLabel>
-        <h1 className="mt-6 max-w-[850px] text-[clamp(54px,7vw,96px)] font-medium leading-[.88] tracking-[-.075em]">Support Work<br /><span className="font-serif font-medium">That Reaches Scale.</span></h1>
+        <h1 className="mt-6 max-w-[850px] text-[clamp(46px,6vw,82px)] font-medium leading-[.88] tracking-[-.075em]">Support Work<br /><span className="font-medium">That Reaches Scale.</span></h1>
         <p className="mt-7 max-w-[690px] text-[16px] leading-[1.65] text-[#5f5269] md:text-[19px]">AIM Foundation operates programmes that need specific support to deliver at scale. The requirements below name what each programme needs and what your support will fund.</p>
       </ScrollReveal>
     </section>
-    {/* <section className="bg-[#f4eef7] px-6 py-20 md:px-12 md:py-28" aria-labelledby="legal-status-heading">
+    <section className="bg-[#f4eef7] px-6 py-20 md:px-12 md:py-28" aria-labelledby="legal-status-heading">
       <div className="mx-auto max-w-[1304px]">
         <ScrollReveal><SectionLabel>Legal Status</SectionLabel><h2 id="legal-status-heading" className="mt-5 text-[clamp(42px,5vw,72px)] font-medium leading-[.94] tracking-[-.07em]">A clear basis for support.</h2></ScrollReveal>
         <div className="mt-12 grid gap-4 md:grid-cols-2">
@@ -60,7 +61,7 @@ export default function GetInvolvedPage() {
     <section className="bg-[#f4eef7] px-6 py-20 md:px-12 md:py-28" aria-labelledby="requirements-heading">
       <div className="mx-auto max-w-[1304px]">
         <ScrollReveal><SectionLabel>Programme Requirements</SectionLabel><h2 id="requirements-heading" className="mt-5 max-w-[760px] text-[clamp(42px,5vw,72px)] font-medium leading-[.94] tracking-[-.07em]">Every programme has a named requirement.</h2></ScrollReveal>
-        <div className="mt-12 border-t border-[#cdbbd6]">{requirements.map(([programme, need], index) => <ScrollReveal as="article" key={programme} delay={index * 90} className="grid gap-5 border-b border-[#cdbbd6] py-7 md:grid-cols-[minmax(220px,.55fr)_1fr] md:gap-12"><h3 className="text-[25px] font-medium leading-[1.05] tracking-[-.04em] text-[#50308d]">{programme}</h3><p className="max-w-[720px] text-[16px] leading-[1.65] text-[#5f5269]">{need}</p></ScrollReveal>)}</div>
+        <div className="mt-12 border-t border-[#cdbbd6]">{requirements.map(([programme, need], index) => <ScrollReveal as="article" key={programme} delay={index * 90} className="grid gap-5 border-b border-[#cdbbd6] py-7 md:grid-cols-[minmax(220px,.55fr)_1fr] md:gap-20"><h3 className="pl-6 text-[25px] font-medium leading-[1.05] tracking-[-.04em] text-[#50308d] md:pl-8">{programme}</h3><p className="max-w-[720px] px-4 text-justify text-[16px] leading-[1.65] text-[#5f5269]">{need}</p></ScrollReveal>)}</div>
       </div>
     </section>
 
@@ -68,18 +69,12 @@ export default function GetInvolvedPage() {
       <div className="mx-auto grid max-w-[1304px] gap-12 lg:grid-cols-[.72fr_1.28fr]">
         <ScrollReveal><SectionLabel>Contact Us</SectionLabel><h2 id="contact-heading" className="mt-5 text-[clamp(42px,4.8vw,68px)] font-medium leading-[.94] tracking-[-.07em]">Let&apos;s start a conversation.</h2><p className="mt-6 max-w-[450px] text-[16px] leading-[1.65] text-[#65566d]">AIM Foundation welcomes conversations with governments, funding partners, clinical institutions, researchers and technology partners.</p><div className="mt-10 space-y-6 text-[15px] leading-[1.6] text-[#55445f]"><a className="flex items-start gap-4 transition hover:text-[#50308d]" href="mailto:contact@aimfoundation.ai"><FiMail className="mt-1 shrink-0 text-[#8d245b]" /><span>contact@aimfoundation.ai</span></a><address className="flex items-start gap-4 not-italic"><FiMapPin className="mt-1 shrink-0 text-[#8d245b]" /><span>C 206, Trendset Rythme, Survey No. 7,<br />White Field Road, Kondapur,<br />Telangana 500 084, India</span></address></div></ScrollReveal>
         <ScrollReveal className="rounded-2xl border border-[#d8c8e1] bg-[#f7f2f8] p-6 shadow-[0_12px_28px_#4c35600b] md:p-8" delay={120}>
-          <form action="mailto:contact@aimfoundation.ai" method="post" encType="text/plain" className="grid gap-5">
-            <div className="grid gap-5 sm:grid-cols-2"><label className="grid gap-2 text-[12px] font-semibold text-[#55445f]">Name<input required name="name" className="rounded-lg border border-[#d5c5de] bg-white px-4 py-3 text-[15px] font-normal outline-none transition focus:border-[#8d245b]" /></label><label className="grid gap-2 text-[12px] font-semibold text-[#55445f]">Organisation<input required name="organisation" className="rounded-lg border border-[#d5c5de] bg-white px-4 py-3 text-[15px] font-normal outline-none transition focus:border-[#8d245b]" /></label></div>
-            <div className="grid gap-5 sm:grid-cols-2"><label className="grid gap-2 text-[12px] font-semibold text-[#55445f]">Email<input required type="email" name="email" className="rounded-lg border border-[#d5c5de] bg-white px-4 py-3 text-[15px] font-normal outline-none transition focus:border-[#8d245b]" /></label><label className="grid gap-2 text-[12px] font-semibold text-[#55445f]">Phone <span className="font-normal text-[#7b7187]">(optional, with country code)</span><input name="phone" type="tel" className="rounded-lg border border-[#d5c5de] bg-white px-4 py-3 text-[15px] font-normal outline-none transition focus:border-[#8d245b]" /></label></div>
-            <label className="grid gap-2 text-[12px] font-semibold text-[#55445f]">Purpose Of Enquiry<select required name="purpose" defaultValue="" className="rounded-lg border border-[#d5c5de] bg-white px-4 py-3 text-[15px] font-normal outline-none transition focus:border-[#8d245b]"><option value="" disabled>Select a purpose</option><option>CSR partnership</option><option>Foundation partnership</option><option>Government engagement</option><option>Media enquiry</option><option>Individual contribution</option><option>Other</option></select></label>
-            <label className="grid gap-2 text-[12px] font-semibold text-[#55445f]">Message<textarea required name="message" rows="5" className="resize-y rounded-lg border border-[#d5c5de] bg-white px-4 py-3 text-[15px] font-normal outline-none transition focus:border-[#8d245b]" /></label>
-            <button type="submit" className="inline-flex w-fit items-center gap-3 rounded-full bg-[#402f5a] px-6 py-4 text-[14px] font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#50308d]">Send Enquiry <FiArrowUpRight aria-hidden="true" /></button>
-          </form>
+          <ContactForm />
         </ScrollReveal>
       </div>
-    </section> */}
+    </section>
 
-    {/* <section className="bg-[#f4eef7] px-6 py-20 md:px-12 md:py-28" aria-labelledby="map-heading"><div className="mx-auto max-w-[1304px]"><ScrollReveal><SectionLabel>Find Us</SectionLabel><h2 id="map-heading" className="mt-5 text-[clamp(42px,4.8vw,68px)] font-medium leading-[.94] tracking-[-.07em]">Visit AIM Foundation.</h2></ScrollReveal><ScrollReveal className="mt-10 overflow-hidden rounded-2xl border border-[#d8c8e1] bg-white shadow-[0_12px_28px_#4c35600b]" delay={100}><iframe className="h-[380px] w-full border-0" title="AIM Foundation location" loading="lazy" src="https://www.google.com/maps?q=C%20206%2C%20Trendset%20Rythme%2C%20White%20Field%20Road%2C%20Kondapur%2C%20Telangana%20500%20084&output=embed" /></ScrollReveal></div></section> */}
+    <section className="bg-[#f4eef7] px-6 py-20 md:px-12 md:py-28" aria-labelledby="map-heading"><div className="mx-auto max-w-[1304px]"><ScrollReveal><SectionLabel>Find Us</SectionLabel><h2 id="map-heading" className="mt-5 text-[clamp(42px,4.8vw,68px)] font-medium leading-[.94] tracking-[-.07em]">Visit AIM Foundation.</h2></ScrollReveal><ScrollReveal className="mt-10 overflow-hidden rounded-2xl border border-[#d8c8e1] bg-white shadow-[0_12px_28px_#4c35600b]" delay={100}><iframe className="h-[380px] w-full border-0" title="AIM Foundation location" loading="lazy" src="https://www.google.com/maps?q=C%20206%2C%20Trendset%20Rythme%2C%20White%20Field%20Road%2C%20Kondapur%2C%20Telangana%20500%20084&output=embed" /></ScrollReveal></div></section>
   
   </main>;
 }
