@@ -22,17 +22,13 @@
       ]
     },
     {
-      "title": "Advisory Board",
+      "title": "Advisory Board & Clinical Advisory",
       "members": [
-        { "name": "Dr. Barsham Abu Dayyeh","image": "/team/barsham.webp", "role": "Advisory Board", "credential": "Executive Director for Innovation, Cedars-Sinai", "bio": "MD, MPH. Director of Interventional Gastroenterology and Associate Dean for Innovation at Cedars-Sinai's Karsh Division of Gastroenterology, known for pioneering work in minimally invasive endoscopic therapies." }
-      ]
-    },
-    {
-      "title": "Clinical Advisory",
-      "members": [
+        { "name": "Dr. Barsham Abu Dayyeh","image": "/team/barsham.webp", "role": "Advisory Board", "credential": "Executive Director for Innovation, Cedars-Sinai", "bio": "MD, MPH. Director of Interventional Gastroenterology and Associate Dean for Innovation at Cedars-Sinai's Karsh Division of Gastroenterology, known for pioneering work in minimally invasive endoscopic therapies." },
         { "name": "Dr. Madhulika Arutla","image": "/team/md.jpeg", "role": "Clinical Nutrition Advisor", "credential": "Head, Department of Clinical Nutrition and Dietetics, AIG Hospitals", "bio": "Validates the nutritional guidance for Janani Mitra." }
       ]
     },
+
     {
       "title": "Management Team",
       "members": [
